@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: Arial,Helvetica,sans-serif;
+  overflow-x: hidden
+}
+
+header {
+  background-color: #eb690a
+}
+
+.logo {
+  width: 12%;
+  margin-left: 6%
+}
+
+a {
+  text-decoration: none
+}
+
+.kraftwerk-orange {
+  color: #eb690a
+}
+
+.first-section,.second-section {
+  border-radius: 2%
+}
+
+form h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  padding-top: 3%;
+  color: #000
+}
+
+.gray-section {
+  background-color: #ecf1f5
+}
+
+.text-section {
+  margin: 6%
+}
+
+.btn-danger {
+  width: 40%;
+  background-image: linear-gradient(to right,#ae3700,#eb690a);
+  font-size: 18px;
+  color: #fff;
+  padding: 1.2%;
+  float: right
+}
+
+.btn-danger,.form-group label,.radio-group {
+  font-weight: 700
+}
+
+.radio-group {
+  margin-left: -12px;
+  display: inline-block;
+  padding: 10px
+}
+
+.title {
+  font-size: 34px;
+  text-align: center;
+  font-weight: 700;
+  color: #000;
+  padding-top: 3%
+}
+
+label[for=phone] {
+  visibility: hidden
+}
+
+/*Reset checkbox and radio button */
+input[type=checkbox],input[type=radio] {
+  opacity: 0;
+  width: 0;
+  margin: 0
+}
+
+/*Radio button initial state  */
+label[for=female],label[for=male] {
+  margin-bottom: 10px;
+  display: inline-block;
+  padding-left: 30px;
+  background: url(img/radio.png) no-repeat;
+  line-height: 26px;
+  cursor: pointer
+}
+
+/*Radio button when checked */
+input:checked+label[for=female],input:checked+label[for=male] {
+  background: url(img/radio-checked.png) no-repeat;
+  color: #ce1010
+}
+
+/*Checkbox initial state */
+label[for=newsletter],label[for=terms] {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-left: 34px;
+  background: url(img/checkbox.png) no-repeat;
+  line-height: 24px;
+  cursor: pointer
+}
+
+/*Checkbox when checkted */
+input:checked+label[for=newsletter],input:checked+label[for=terms] {
+  background: url(img/checkbox-checked.png) no-repeat
+}
+
+/*Footer section with text */
+.footer-copyright {
+  background-color: #ae3700;
+  text-align: center;
+  color: #fff;
+  height: 100%
+}
+
+/*Footer section without text */
+.footer-empty {
+  height: 90px;
+  background: #eb690a
+}
+
+/* MEDIA QUERIES */
+
+/*Media query for Ipad-s */
+@media only screen and (max-width:768px) {
+  header {
+      width: 100%;
+      text-align: center
+  }
+
+  .logo {
+      width: 26%;
+      display: inline-block;
+      margin: 0 auto
+  }
+
+  .title {
+      font-size: 120%;
+      padding-top: 3%
+  }
+
+  .form-group .form-control {
+      font-size: 70%
+  }
+
+  .footer-empty {
+      height: 239px
+  }
+
+  .text-center {
+      font-size: 90%
+  }
+
+  .form-group {
+      font-size: 80%
+  }
+
+  .btn-danger {
+      zoom: .8
+  }
+
+  .phone {
+      margin-top: 19%
+  }
+
+  .checkboxes,.radio-group {
+      zoom: .8
+  }
+}
+
+@media only screen and (max-width:563px) {
+  .first-section {
+      margin-bottom: 5%
+  }
+
+  .btn-danger {
+      zoom: .8;
+      margin-bottom: 3%
+  }
+}
+
+/*Media query for mobile phones */
+@media only screen and (max-width:480px) {
+  header {
+      text-align: center
+  }
+
+  label {
+      font-size: 10px
+  }
+
+  form h3 {
+      font-size: 100%
+  }
+
+  form,header {
+      width: 100%
+  }
+
+  .logo {
+      width: 26%;
+      display: inline-block;
+      margin: 0 auto
+  }
+
+  .first-section {
+      margin-bottom: 5%
+  }
+
+  .title {
+      font-size: 120%;
+      padding-top: 3%
+  }
+
+  .text-section {
+      margin: 8%
+  }
+
+  .form-group .form-control,.text-center {
+      font-size: 70%
+  }
+
+  .btn-danger {
+      zoom: .8
+  }
+
+  .phone {
+      margin-top: 18%
+  }
+
+  .radio-group {
+      zoom: .8
+  }
+
+  .checkboxes {
+      zoom: .7
+  }
+}
+
+@media only screen and (min-width:576px) {
+  .gray-section {
+      margin-top: 10px
+  }
+
+  .col-sm-6 {
+      flex: 0 0 47%!important
+  }
+
+  .logo {
+      align-items: center
+  }
+
+  .footer-empty {
+      height: 585px
+  }
+}
